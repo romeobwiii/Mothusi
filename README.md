@@ -4,9 +4,9 @@
 Mothusi is a  voice personal assistant developed by Mulax Prime. 
 
 ##Features
-[X]listens to voice and handle the rest 
-[X]Speaks answers when asked 
-[X]Opens all the desktop icons and more 
+listens to voice and handle the rest 
+Speaks answers when asked 
+Opens all the desktop icons and more 
 
 #How to run
 1 Get free Groq API key from console.groq.com
