@@ -11,6 +11,7 @@ def open_powerpoint():
     speak("Opening Microsoft PowerPoint...")
     os.startfile("powerpnt.exe")
 
+    
 def goodbye():
-    subprocess.call(['PowerShell', '-Command', 'Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak("Goodbye! Study hard!"); exit()'])
-    exit()
+    subprocess.call(['powershell', '-Command', 'Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak("Goodbye. Study hard.")'])
+    raise SystemExit
