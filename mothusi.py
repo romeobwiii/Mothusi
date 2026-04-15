@@ -8,7 +8,7 @@ from features.speak import speak #to allow mothusi to speak
 from features.listen import listen #to allow mothusi to listen and understand what you say
 from features.commands import open_word, open_powerpoint, goodbye #to allow mothusi to execute commands like opening Microsoft Word and PowerPoint, and saying goodbye
 from features.ai import ask #to allow mothusi to use google genai to answer questions and have conversations with me
-
+from features.commands import open_word, open_powerpoint, goodbye, record_this #usi to execute commands like opening Microsoft Word and PowerPoint, and saying goodbye, and writing content in Microsoft Word using voice input 
 def greet():
     speak("Hello! I am Mothusi, your personal assistant. How can I help you today?")
 
@@ -26,6 +26,8 @@ while running:
             open_word()
         elif "open powerpoint" in command:
             open_powerpoint()
+        elif "record this" in command:
+            record_this()
         else:
             time.sleep(1) #to allow mothusi to pause briefly before responding to the command
             ask(command)
